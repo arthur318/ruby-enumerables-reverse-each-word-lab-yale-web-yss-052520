@@ -5,9 +5,6 @@ def reverse_each_word(string)
   sentence_array = string.split(" ")
   reversed_sentence = sentence_array.collect do |word|
     word.reverse
+  end
+  reversed_sentence.join(" ")
 end
-  p reversed_sentence.join(" ")
-end
-
-
-reverse_each_word("Hello there, and how are you?")
