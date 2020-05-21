@@ -2,10 +2,9 @@
 # returns same sentence with words reversed
 
 def reverse_each_word(string)
-  p sentence_array = string.split(" ")
-  reversed_sentence = []
-  sentence_array.each do |word|
-    reversed_sentence << word.reverse
+  sentence_array = string.split(" ")
+  sentence_array.collect do |word|
+    word.reverse
 end
   p reversed_sentence.join(" ")
 end
